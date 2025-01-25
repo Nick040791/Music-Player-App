@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player App</title>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+    <div class="player">
+        <h2>Helix Music Player</h2>
+        <audio id="audio" controls>
+            <source id="audioSource" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="controls">
+            <button onclick="document.getElementById('audio').play()">Play</button>
+            <button onclick="document.getElementById('audio').pause()">Pause</button>
+            <button onclick="document.getElementById('audio').load()">Stop</button>
+        </div>
+        <div class="gallery">
+            <h3>Tracks</h3>
+            <ul id="songList">
+                <li class="song" onclick="playSong('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3', this)">Helix 1</li>
+                <li class="song" onclick="playSong('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3', this)">Helix 2</li>
+                <li class="song" onclick="playSong('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3', this)">Helix 3</li>
+                <li class="song" onclick="playSong('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3', this)">Helix 4</li>
+                <li class="song" onclick="playSong('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3', this)">Helix 5</li>
+                <li class="song" onclick="playSong('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3', this)">Helix 6</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="Script.js"></script>
+</html>
